@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230222124036">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230222125041">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -230,6 +230,60 @@
 				</div>
 			</section>
 		</main>
+		<div id="form-popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="10" cy="10" r="10" transform="rotate(-180 10 10)" fill="white" />
+							<path d="M4.28613 10.0001L12.8576 6.28852L12.8576 13.7116L4.28613 10.0001Z" fill="#38405B" />
+						</svg>
+						<span>BACK</span>
+					</button>
+					<div class="popup__title">Contact us</div>
+					<div class="popup__body">
+						<form action="#" class="popup__form form-popup">
+							<div class="form-popup__line">
+								<label for="comp-name" class="form-popup__label">Company / Project name</label>
+								<div class="form-popup__inner">
+									<input id="comp-name" autocomplete="off" type="text" name="form[company-name]" placeholder="Henle & AltScores" class="input">
+								</div>
+							</div>
+							<div class="form-popup__col">
+								<div class="form-popup__row">
+									<label for="email" class="form-popup__label">Email</label>
+									<div class="form-popup__inner">
+										<input id="email" autocomplete="off" type="email" name="form[email]" placeholder="klauslang@gmail.com" class="input">
+									</div>
+								</div>
+								<div class="form-popup__row">
+									<label for="website" class="form-popup__label">Website link</label>
+									<div class="form-popup__inner">
+										<input id="website" autocomplete="off" type="text" name="form[website]" placeholder="klauslang.com" class="input">
+									</div>
+								</div>
+							</div>
+							<div class="form-popup__col">
+								<div class="form-popup__row">
+									<label for="name" class="form-popup__label">Full name</label>
+									<div class="form-popup__inner">
+										<input id="name" autocomplete="off" type="text" name="form[name]" placeholder="Klaus Lang" class="input">
+									</div>
+								</div>
+								<div class="form-popup__row">
+									<label for="link" class="form-popup__label">Discord / Telegram link</label>
+									<div class="form-popup__inner">
+										<input id="link" autocomplete="off" type="text" name="form[]" placeholder="@klauslang.muart" class="input">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="form-popup__submit button">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
@@ -293,7 +347,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230222124036"></script>
+	<script src="js/app.min.js?_v=20230222125041"></script>
 </body>
 
 </html>
