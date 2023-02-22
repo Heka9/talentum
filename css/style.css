@@ -372,7 +372,7 @@ body::after {
   grid-row: span 2;
 }
 
-.form-popup__col:nth-child(3) {
+.form-popup__col_no-mb {
   margin-bottom: 0rem;
 }
 
