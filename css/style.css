@@ -372,10 +372,6 @@ body::after {
   grid-row: span 2;
 }
 
-.form-popup__col_no-mb {
-  margin-bottom: 0rem;
-}
-
 .form-popup__submit {
   -ms-grid-column-align: start;
       justify-self: start;
@@ -2804,7 +2800,7 @@ body::after {
   }
 
   .form-popup__submit {
-    margin-top: 3.75rem;
+    margin-top: 0.75rem;
   }
 
   .header {
@@ -4268,7 +4264,7 @@ body::after {
   }
 
   .form-popup__submit {
-    margin-top: 3rem;
+    margin-top: 0.625rem;
   }
 
   .header {
@@ -5109,15 +5105,15 @@ body::after {
     }
 }
 
-@supports (margin-top: clamp( 3rem , 2.731610338rem  +  1.1928429423vw , 3.75rem )) {
+@supports (margin-top: clamp( 0.625rem , 0.5802683897rem  +  0.1988071571vw , 0.75rem )) {
     .form-popup__submit {
-      margin-top: clamp( 3rem , 2.731610338rem  +  1.1928429423vw , 3.75rem );
+      margin-top: clamp( 0.625rem , 0.5802683897rem  +  0.1988071571vw , 0.75rem );
     }
 }
 
-@supports not (margin-top: clamp( 3rem , 2.731610338rem  +  1.1928429423vw , 3.75rem )) {
+@supports not (margin-top: clamp( 0.625rem , 0.5802683897rem  +  0.1988071571vw , 0.75rem )) {
     .form-popup__submit {
-      margin-top: calc(3rem + 0.75 * (100vw - 22.5rem) / 62.875);
+      margin-top: calc(0.625rem + 0.125 * (100vw - 22.5rem) / 62.875);
     }
 }
 
