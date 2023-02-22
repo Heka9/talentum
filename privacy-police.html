@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230221154648">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230222124036">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,11 +51,27 @@
 										</svg>
 									</a>
 								</div>
-								<a href="#" class="actions-header__button button">Launch App</a>
+								<div class="actions-header__buttons">
+									<div class="actions-header__line">
+										<div class="actions-header__text">For projects</div>
+										<a href="#" data-popup="#form-popup" class="actions-header__button button actions-header__button_hide">Add a project</a>
+									</div>
+									<div class="actions-header__line">
+										<div class="actions-header__text">For talents</div>
+										<a href="#" class="actions-header__button button">Launch App</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<button type="button" class="menu__icon icon-menu">
+						<span class="icon-menu__burger"></span>
+						<svg class="icon-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="white" />
+							<path d="M3.42896 7.99996L10.2861 5.03073L10.2861 10.9692L3.42896 7.99996Z" fill="#38405B" />
+						</svg>
+						<span class="icon-menu__text">Back</span>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -538,7 +554,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230221154648"></script>
+	<script src="js/app.min.js?_v=20230222124036"></script>
 </body>
 
 </html>

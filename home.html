@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230221154648">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230222124036">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,11 +51,27 @@
 										</svg>
 									</a>
 								</div>
-								<a href="#" class="actions-header__button button">Launch App</a>
+								<div class="actions-header__buttons">
+									<div class="actions-header__line">
+										<div class="actions-header__text">For projects</div>
+										<a href="#" data-popup="#form-popup" class="actions-header__button button actions-header__button_hide">Add a project</a>
+									</div>
+									<div class="actions-header__line">
+										<div class="actions-header__text">For talents</div>
+										<a href="#" class="actions-header__button button">Launch App</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<button type="button" class="menu__icon icon-menu">
+						<span class="icon-menu__burger"></span>
+						<svg class="icon-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="8" cy="8" r="8" transform="rotate(-180 8 8)" fill="white" />
+							<path d="M3.42896 7.99996L10.2861 5.03073L10.2861 10.9692L3.42896 7.99996Z" fill="#38405B" />
+						</svg>
+						<span class="icon-menu__text">Back</span>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -308,6 +324,39 @@
 						<img src="img/create/task-creation.png" alt="task creation">
 					</div>
 				</div>
+				<div class="create__decor-bg-1">
+					<svg width="2254" height="2865" viewBox="0 0 2254 2865" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1294.1" height="2557.48" transform="matrix(0.906308 -0.422618 0.422582 0.906324 0 546.912)" fill="url(#paint0_linear_213_21397)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21397" x1="1.5126e-06" y1="854.862" x2="1294.1" y2="854.862" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="create__decor-bg-2">
+					<svg width="2234" height="1759" viewBox="0 0 2234 1759" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1294.11" height="1965.76" transform="matrix(0.258819 -0.965926 -0.965911 -0.258873 1898.75 1758.89)" fill="url(#paint0_linear_213_21396)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21396" x1="1.5126e-06" y1="657.073" x2="1294.11" y2="657.073" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="create__decor-bg-3">
+					<svg width="3576" height="3576" viewBox="0 0 3576 3576" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1294.1" height="3761.97" transform="matrix(-0.707107 -0.707107 0.707135 -0.707079 915.07 3575.08)" fill="url(#paint0_linear_213_21398)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21398" x1="1.5126e-06" y1="1257.47" x2="1294.1" y2="1257.47" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
 			</div>
 			<div class="page__motivate motivate">
 				<div class="motivate__container-small">
@@ -441,16 +490,16 @@
 			<div class="page__cards cards">
 				<div class="cards__container">
 					<div class="cards__items">
-						<article data-watch data-watch-threshold="0.2" data-watch-once class="cards__item item-cards">
+						<article class="cards__item item-cards">
 							<div class="item-cards__content">
 								<h4 class="item-cards__title">Want to grow talents <br> together?
 							</div>
 							<div class="item-cards__action">
-								<a href="#" class="item-cards__button button">Add a project</a>
+								<a href="#" data-popup="#form-popup" class="item-cards__button button">Add a project</a>
 								<div class="item-cards__caption">For projects</div>
 							</div>
 						</article>
-						<article data-watch data-watch-threshold="0.2" data-watch-once class="cards__item item-cards">
+						<article class="cards__item item-cards">
 							<div class="item-cards__content">
 								<h4 class="item-cards__title">Let's drive each other's success together
 							</div>
@@ -482,16 +531,15 @@
 											</div>
 										</a>
 										<div class="item-blog__body">
-											<h4 class="item-blog__title"><a>Web3 & the Decentralization of the
+											<h4 class="item-blog__title"><a href="#">Web3 & the Decentralization of the
 													Internet</a>
 											</h4>
-											<div class="item-blog__text">
-												<p>As more and more businesses and individuals adopt web3 technology, it's becoming
-													clear that it will play a major role in shaping the future of online
-													transactions.
-													This post explores the potential benefits and drawbacks of web3 for e-commerce.
-												</p>
-											</div>
+											<a href="#" class="item-blog__text">
+												As more and more businesses and individuals adopt web3 technology, it's becoming
+												clear that it will play a major role in shaping the future of online
+												transactions.
+												This post explores the potential benefits and drawbacks of web3 for e-commerce.
+											</a>
 											<div class="item-blog__footer">
 												<div class="item-blog__info">
 													<div class="item-blog__date">02/01/23</div>
@@ -525,11 +573,11 @@
 											<h4 class="item-blog__title"><a href="#">Understanding the Basics of Web3: A Beginner's
 													Guide</a>
 											</h4>
-											<div class="item-blog__text">
-												<p>Are you new to the world of web3? This guide will break down the basics of what
-													it
-													is, how it works, and how it's different from traditional web technology.</p>
-											</div>
+											<a href="#" class="item-blog__text">
+												Are you new to the world of web3? This guide will break down the basics of what
+												it
+												is, how it works, and how it's different from traditional web technology.
+											</a>
 											<div class="item-blog__footer">
 												<div class="item-blog__info">
 													<div class="item-blog__date">03/01/23</div>
@@ -562,13 +610,12 @@
 										<div class="item-blog__body">
 											<h4 class="item-blog__title"><a href="#">Web3 and the Future of Online Transactions</a>
 											</h4>
-											<div class="item-blog__text">
-												<p>As more and more businesses and individuals adopt web3 technology, it's becoming
-													clear that it will play a major role in shaping the future of online
-													transactions.
-													This post explores the potential benefits and drawbacks of web3 for e-commerce.
-												</p>
-											</div>
+											<a href="#" class="item-blog__text">
+												As more and more businesses and individuals adopt web3 technology, it's becoming
+												clear that it will play a major role in shaping the future of online
+												transactions.
+												This post explores the potential benefits and drawbacks of web3 for e-commerce.
+											</a>
 											<div class="item-blog__footer">
 												<div class="item-blog__info">
 													<div class="item-blog__date">01/01/23</div>
@@ -602,13 +649,12 @@
 											<h4 class="item-blog__title"><a href="#">Web3 & the Decentralization of the
 													Internet</a>
 											</h4>
-											<div class="item-blog__text">
-												<p>As more and more businesses and individuals adopt web3 technology, it's becoming
-													clear that it will play a major role in shaping the future of online
-													transactions.
-													This post explores the potential benefits and drawbacks of web3 for e-commerce.
-												</p>
-											</div>
+											<a href="#" class="item-blog__text">
+												As more and more businesses and individuals adopt web3 technology, it's becoming
+												clear that it will play a major role in shaping the future of online
+												transactions.
+												This post explores the potential benefits and drawbacks of web3 for e-commerce.
+											</a>
 											<div class="item-blog__footer">
 												<div class="item-blog__info">
 													<div class="item-blog__date">02/01/23</div>
@@ -642,11 +688,11 @@
 											<h4 class="item-blog__title"><a href="#">Understanding the Basics of Web3: A Beginner's
 													Guide</a>
 											</h4>
-											<div class="item-blog__text">
-												<p>Are you new to the world of web3? This guide will break down the basics of what
-													it
-													is, how it works, and how it's different from traditional web technology.</p>
-											</div>
+											<a href="#" class="item-blog__text">
+												Are you new to the world of web3? This guide will break down the basics of what
+												it
+												is, how it works, and how it's different from traditional web technology.
+											</a>
 											<div class="item-blog__footer">
 												<div class="item-blog__info">
 													<div class="item-blog__date">03/01/23</div>
@@ -679,13 +725,12 @@
 										<div class="item-blog__body">
 											<h4 class="item-blog__title"><a href="#">Web3 and the Future of Online Transactions</a>
 											</h4>
-											<div class="item-blog__text">
-												<p>As more and more businesses and individuals adopt web3 technology, it's becoming
-													clear that it will play a major role in shaping the future of online
-													transactions.
-													This post explores the potential benefits and drawbacks of web3 for e-commerce.
-												</p>
-											</div>
+											<a href="#" class="item-blog__text">
+												As more and more businesses and individuals adopt web3 technology, it's becoming
+												clear that it will play a major role in shaping the future of online
+												transactions.
+												This post explores the potential benefits and drawbacks of web3 for e-commerce.
+											</a>
 											<div class="item-blog__footer">
 												<div class="item-blog__info">
 													<div class="item-blog__date">01/01/23</div>
@@ -708,8 +753,124 @@
 					<div class="blog__button">
 						<a href="#" class="blog__link button">See all articles</a>
 					</div>
+				</div>
+				<div class="blog__decor-bg-1">
+					<svg width="1011" height="1201" viewBox="0 0 1011 1201" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1068.32" height="549.602" transform="matrix(-0.5 -0.866025 -0.866008 0.50003 1010.12 925.191)" fill="url(#paint0_linear_213_21428)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21428" x1="1.2487e-06" y1="183.709" x2="1068.32" y2="183.709" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="blog__decor-bg-2">
+					<svg width="1047" height="809" viewBox="0 0 1047 809" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1206.27" height="549.602" transform="matrix(-0.5 -0.866025 -0.866008 0.50003 1046.32 534.164)" fill="url(#paint0_linear_213_21427)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21427" x1="1.40994e-06" y1="183.709" x2="1206.27" y2="183.709" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="blog__decor-bg-3">
+					<svg width="1022" height="967" viewBox="0 0 1022 967" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1090.2" height="549.602" transform="matrix(-0.5 -0.866025 -0.866008 0.50003 1021.06 692.14)" fill="url(#paint0_linear_213_21426)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21426" x1="1.27427e-06" y1="183.709" x2="1090.2" y2="183.709" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="blog__decor-bg-4">
+					<svg width="1022" height="1040" viewBox="0 0 1022 1040" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.45" width="1090.2" height="549.602" transform="matrix(-0.5 -0.866025 -0.866008 0.50003 1021.06 765.14)" fill="url(#paint0_linear_213_21425)" />
+						<defs>
+							<linearGradient id="paint0_linear_213_21425" x1="1.27427e-06" y1="183.709" x2="1090.2" y2="183.709" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#38405B" />
+								<stop offset="0.416663" stop-color="#38405B" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
 			</section>
+			<div class="page__cookie cookie">
+				<div class="cookie__inner">
+					<div class="cookie__body">
+						<div class="cookie__title">Cookie Consent</div>
+						<div class="cookie__text">
+							<p>
+								By clicking “Accept”, you agree to the storing of cookies on your device to enhance site
+								navigation, analyze site usage, and assist in our marketing efforts. View our Privacy Policy for
+								more information.
+							</p>
+						</div>
+						<div class="cookie__footer">
+							<button type="button" class="cookie__button cookie__button_deny">Deny</button>
+							<button type="button" class="cookie__button button">Accept</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
+		<div id="form-popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="10" cy="10" r="10" transform="rotate(-180 10 10)" fill="white" />
+							<path d="M4.28613 10.0001L12.8576 6.28852L12.8576 13.7116L4.28613 10.0001Z" fill="#38405B" />
+						</svg>
+						<span>BACK</span>
+					</button>
+					<div class="popup__title">Contact us</div>
+					<div class="popup__body">
+						<form action="#" class="popup__form form-popup">
+							<div class="form-popup__line">
+								<label for="comp-name" class="form-popup__label">Company / Project name</label>
+								<div class="form-popup__inner">
+									<input id="comp-name" autocomplete="off" type="text" name="form[company-name]" placeholder="Henle & AltScores" class="input">
+								</div>
+							</div>
+							<div class="form-popup__col">
+								<div class="form-popup__row">
+									<label for="email" class="form-popup__label">Email</label>
+									<div class="form-popup__inner">
+										<input id="email" autocomplete="off" type="email" name="form[email]" placeholder="klauslang@gmail.com" class="input">
+									</div>
+								</div>
+								<div class="form-popup__row">
+									<label for="website" class="form-popup__label">Website link</label>
+									<div class="form-popup__inner">
+										<input id="website" autocomplete="off" type="text" name="form[website]" placeholder="klauslang.com" class="input">
+									</div>
+								</div>
+							</div>
+							<div class="form-popup__col">
+								<div class="form-popup__row">
+									<label for="name" class="form-popup__label">Full name</label>
+									<div class="form-popup__inner">
+										<input id="name" autocomplete="off" type="text" name="form[name]" placeholder="Klaus Lang" class="input">
+									</div>
+								</div>
+								<div class="form-popup__row">
+									<label for="link" class="form-popup__label">Discord / Telegram link</label>
+									<div class="form-popup__inner">
+										<input id="link" autocomplete="off" type="text" name="form[]" placeholder="@klauslang.muart" class="input">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="form-popup__submit button">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
@@ -773,7 +934,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230221154648"></script>
+	<script src="js/app.min.js?_v=20230222124036"></script>
 </body>
 
 </html>
