@@ -296,7 +296,7 @@ body::after {
   background: linear-gradient(226.85deg, rgba(218, 217, 247, 0.2) 0%, rgba(218, 217, 247, 0) 100%), #38405b;
   border-radius: 1.75rem 0px 0px 1.75rem;
   padding-top: 2.5rem;
-  width: 47.8125rem;
+  width: 48rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,6 +370,10 @@ body::after {
 .form-popup__col {
   -ms-grid-row-span: 2;
   grid-row: span 2;
+}
+
+.form-popup__col:last-of-type {
+  margin-bottom: 0rem;
 }
 
 .form-popup__submit {
@@ -2791,6 +2795,10 @@ body::after {
     margin-bottom: 0.5rem;
   }
 
+  .form-popup__col:not(:last-child) {
+    margin-bottom: 2.875rem;
+  }
+
   .form-popup__submit {
     min-width: 10rem;
   }
@@ -3511,6 +3519,13 @@ body::after {
     border-radius: 0rem;
     max-width: none;
     width: 100%;
+  }
+
+  .form-popup__col {
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 
   .form-popup__submit {
@@ -4242,6 +4257,10 @@ body::after {
 
   .form-popup__label:not(:last-child) {
     margin-bottom: 0.375rem;
+  }
+
+  .form-popup__col:not(:last-child) {
+    margin-bottom: 2.375rem;
   }
 
   .form-popup__submit {
@@ -5063,6 +5082,18 @@ body::after {
 @supports not (margin-bottom: clamp( 0.375rem , 0.3302683897rem  +  0.1988071571vw , 0.5rem )) {
     .form-popup__label:not(:last-child) {
       margin-bottom: calc(0.375rem + 0.125 * (100vw - 22.5rem) / 62.875);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.375rem , 2.1960735586rem  +  0.7952286282vw , 2.875rem )) {
+    .form-popup__col:not(:last-child) {
+      margin-bottom: clamp( 2.375rem , 2.1960735586rem  +  0.7952286282vw , 2.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.375rem , 2.1960735586rem  +  0.7952286282vw , 2.875rem )) {
+    .form-popup__col:not(:last-child) {
+      margin-bottom: calc(2.375rem + 0.5 * (100vw - 22.5rem) / 62.875);
     }
 }
 
